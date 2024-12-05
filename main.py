@@ -1,14 +1,18 @@
-def print_menu():
+def display_menu():
     print("\nIndex File Management System")
-    print("Commands:")
-    print("create - Create a new index file")
-    print("open - Open an existing index file")
-    print("insert - Insert a key/value pair")
-    print("search - Search for a key")
-    print("load - Load key/value pairs from a file")
-    print("print - Print all key/value pairs")
-    print("extract - Save key/value pairs to a file")
-    print("quit - Exit the program")
+    print("1. create - Create a new index file")
+    print("2. open - Open an existing index file")
+    print("3. quit - Exit program")
 
 def main():
-    current_file = None
+    while True:
+        display_menu()
+        command = input("\nEnter command: ").lower().strip()
+        
+        if command == "quit":
+            break
+        else:
+            print("Command not implemented yet")
+
+if __name__ == "__main__":
+    main()
